@@ -53,9 +53,3 @@ Chat
 
 ----------
 
-dawdawda
-awdawdaw
-
-awdawdaw
-
-adawdadwada
