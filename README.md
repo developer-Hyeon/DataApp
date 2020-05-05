@@ -1,3 +1,16 @@
+Tech
+-------------
+Java , XML language
+
+Google Firebase
+ - Authentication
+ - Push
+ - Storge
+ - Realtime-Database
+
+Google CloudFlatForm(GoogleMap)
+
+Android inapp billing
 
 Screenshots
 -------------
