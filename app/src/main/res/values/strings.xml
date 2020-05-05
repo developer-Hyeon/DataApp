@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">오늘뭐해</string>
+    <string name="namgung_channel_id" translatable="false">o</string>
+    <string name="namgung_channel_name" translatable="true">o</string>
+</resources>

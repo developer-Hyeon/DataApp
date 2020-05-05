@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <sinabro.today.custom.CustomImageView2
+        android:id="@+id/chatitem_imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chatitem_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="방 이름" />
+
+        <TextView
+            android:id="@+id/chatitem_textview_lastMessage"
+            android:text="축하합니다! 채팅방이 개설되었습니다."
+            android:maxWidth="250dp"
+            android:layout_below="@+id/chatitem_textview_title"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="250dp"
+            android:layout_height="20dp" />
+
+        <TextView
+
+            android:id="@+id/chatitem_textview_timestamp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp"
+            android:text="2011.11.11 11:11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:id="@+id/chatitem_textview_counter"
+            android:layout_below="@+id/chatitem_textview_timestamp"
+            android:background="@drawable/text_round"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text=""
+
+            android:textSize="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

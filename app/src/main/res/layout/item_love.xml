@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="95dp"
+            android:layout_height="110dp"
+            android:background="#ECEFF1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/usernonimage"
+            android:id="@+id/love_imageview"></ImageView>
+
+        <TextView
+            android:id="@+id/love_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="120dp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:background="@drawable/border"
+            android:gravity="center"></TextView>
+
+
+        <TextView
+            android:id="@+id/love_time"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="95dp"
+            android:layout_height="15dp"
+            android:text="D-0"
+            android:maxWidth="90dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+            android:gravity="center"></TextView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

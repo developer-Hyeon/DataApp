@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".signup.EmailSignupActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/email_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이메일 등록"
+            android:textColor="#865FF8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:id="@+id/email_linear_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/email_check_imageview"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/id"></ImageView>
+
+
+        <EditText
+            android:id="@+id/email_edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="아이디로 사용할 이메일을 입력해주세요"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp"></EditText>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/email_check_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이메일 형식이 올바르지 않습니다."
+            android:textColor="#FF0000"
+            android:textSize="10sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/email_linear_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/password_check_imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/password"></ImageView>
+
+
+            <EditText
+                android:id="@+id/email_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:maxLines="1"
+                android:hint="비밀번호를 입력해주세요"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp"></EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/password_check_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6자 이상 입력해주세요."
+            android:textColor="#FF0000"
+            android:textSize="10sp"
+            android:gravity="left"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:visibility="gone"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/email_linear_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/repassword_check_imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/password"></ImageView>
+
+
+            <EditText
+                android:id="@+id/email_edittext_password_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:background="@null"
+
+                android:maxLength="20"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="비밀번호를 다시 입력해주세요"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp"></EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/repassword_check_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호가 일치하지 않습니다."
+            android:textColor="#FF0000"
+            android:textSize="10sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"></TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="이메일은 비밀번호 찾기에 사용되니"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="정확히 입력해주세요."
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="visible"></TextView>
+
+    <Button
+        android:id="@+id/email_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#865FF8"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="다음"></Button>
+
+</LinearLayout>

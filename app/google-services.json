@@ -1,0 +1,89 @@
+{
+  "project_info": {
+    "project_number": "615865952472",
+    "firebase_url": "https://sinabro-695ef.firebaseio.com",
+    "project_id": "sinabro-695ef",
+    "storage_bucket": "sinabro-695ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615865952472:android:1fd77ff45053987d220fad",
+        "android_client_info": {
+          "package_name": "android.sinabrotoday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615865952472-ukhsn47oa8oom7jmacf7mb68456d2m3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaBpH1frYBjY_1-3nt-BJPsymVv6grpdg"
+        },
+        {
+          "current_key": "AIzaSyA5jNAfYpdxoFHb9-ySfIZbQwN_G3jrOrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615865952472-ukhsn47oa8oom7jmacf7mb68456d2m3e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "615865952472-v6bp8df6jndct58l78fl9sai15p4isbo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sinabro.drink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615865952472:android:0b9265c5f56a99c8220fad",
+        "android_client_info": {
+          "package_name": "sinabro.today"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615865952472-ukhsn47oa8oom7jmacf7mb68456d2m3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaBpH1frYBjY_1-3nt-BJPsymVv6grpdg"
+        },
+        {
+          "current_key": "AIzaSyA5jNAfYpdxoFHb9-ySfIZbQwN_G3jrOrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615865952472-ukhsn47oa8oom7jmacf7mb68456d2m3e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "615865952472-v6bp8df6jndct58l78fl9sai15p4isbo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sinabro.drink"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

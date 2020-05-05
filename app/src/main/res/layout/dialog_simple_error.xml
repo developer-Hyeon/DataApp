@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ok_txt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="text"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_alteog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="다른 기기에서 비밀번호를 변경하였습니다.                   다시 로그인 해주세요."
+            android:textColor="#865FF8"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="#865FF8" />
+
+        <TextView
+            android:id="@+id/email_simple_error"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:hint="이메일을 입력해 주세요."
+            android:textColor="#000000"
+            android:textColorHint="#C8C9CA"
+            android:textColorLink="#C8C9CA"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/password_simple_error"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="바뀐 비밀번호를 입력해 주세요."
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#C8C9CA"
+            android:textColorLink="#C8C9CA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="#d7d7d7" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/settingYes_simple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:text="로그인"
+                android:textColor="#808080"
+                android:textSize="15sp"></Button>
+
+            <Button
+                android:id="@+id/settingNo_simple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="비밀번호 찾기"
+                android:textColor="#808080"
+                android:textSize="15sp"></Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".administer.UserRequestActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/administer_reclclerview"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/agree"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:text="승인"></Button>
+
+        <Button
+            android:id="@+id/disagree"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="거절"></Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.LoveFragment">
+
+    <LinearLayout
+        android:id="@+id/love_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66bdbdbd"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="나에게 관심을 보낸 상대방 리스트"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:textColor="#000000"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="이미지를 클릭하여 상대방의 프로필을 확인해보세요."
+            android:textSize="13sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#865FF8"></TextView>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:numColumns="auto_fit"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"></GridView>
+
+
+    <TextView
+        android:id="@+id/love_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하트리스트가 비어있습니다."
+        android:layout_gravity="center"></TextView>
+
+</LinearLayout>

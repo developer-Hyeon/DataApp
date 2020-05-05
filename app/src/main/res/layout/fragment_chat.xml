@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        android:id="@+id/chatfragment_recyclerview"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/chat_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="채팅리스트가 비어있습니다."
+        android:layout_gravity="center"></TextView>
+
+    <TextView
+        android:id="@+id/chat_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사람들에게 먼저 대화를 걸어보세요!"
+        android:layout_gravity="center"></TextView>
+
+
+</LinearLayout>

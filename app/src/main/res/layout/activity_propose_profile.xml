@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile.ProfileActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/propose_profile_reclclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/propose_profile_nonphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:text="사진 심사가 완료되지 않은 사용자입니다."
+            android:textColor="#865FF8"></TextView>
+
+        <Button
+            android:id="@+id/propose_profile_backbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/outline_close_24"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"></Button>
+
+
+        <Button
+            android:id="@+id/propose_profile_blockbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:text="블랙리스트"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#FFFFFF"
+            android:adjustViewBounds="true"
+            android:onClick="mOnBlock"
+            tools:ignore="OnClick"
+            android:scaleType="fitCenter"></Button>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="90dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/propose_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@android:color/transparent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
+
+                    <TextView
+                        android:id="@+id/propose_profile_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="3dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="30dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"></TextView>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/distance_between"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@android:color/transparent"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="거리"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/propose_profile_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:maxWidth="350dp"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    android:textSize="15sp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/propose_profile_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:text="술한잔 걸치고 싶네요."
+                    android:layout_marginTop="10dp"
+                    android:textColor="#865FF8"
+                    android:background="@android:color/transparent"
+                    android:textSize="15sp"></TextView>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="bottom">
+
+            <View
+                android:background="#66bdbdbd"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/propose_profile_proposeButton"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="mOnPropose"
+                    tools:ignore="OnClick"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/outline_favorite_24"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:text="대화요청"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1">
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>
