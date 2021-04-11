@@ -1,3 +1,7 @@
+Startup (sinabro)
+2019.06 ~ 2020.03
+
+
 Tech
 -------------
 Java , XML language
